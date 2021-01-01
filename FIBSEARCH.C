@@ -67,14 +67,14 @@ int n,i,arr[20],x,j,temp;
 printf("Enter number of elements: ");
 scanf("%d",&n);
 printf("Enter the elements:\n");
-for(i=1;i<=n;i++)
+for(i=0;i<n;i++)
 {
 scanf("%d",&arr[i]);
 }
 for (i = 0; i < n; ++i) 
         {
  
-            for (j = i + 1; j < n; ++j)
+            for (j = i + 1; j <n; ++j)
             {
  
                 if (arr[i] > arr[j]) 
@@ -90,11 +90,16 @@ for (i = 0; i < n; ++i)
  
         }
  
-        
-       
+   
+// for(i=0;i<n;++i)
+// {
+//     printf("%d ",arr[i]);
+// }
 printf("Enter the number to be searched: ");
 scanf("%d",&x);
 findit(arr, x, n); 
 return 0; 
-}
+} 
+
+
 
